@@ -1,0 +1,27 @@
+[
+    {
+        "hora": "08-09",
+        "dia": "Martes",
+        "detalle": "👤 (35) MC510-C/D // VIRTUAL (T)"
+    },
+    {
+        "hora": "09-10",
+        "dia": "Martes",
+        "detalle": "👤 (12) MC510-E // VIRTUAL (T)"
+    },
+    {
+        "hora": "10-11",
+        "dia": "Miércoles",
+        "detalle": "👤 (12) MC510-E // VIRTUAL (P)"
+    },
+    {
+        "hora": "17-18",
+        "dia": "Viernes",
+        "detalle": "👤 (55) MB545-C // VIRTUAL (T)"
+    },
+    {
+        "hora": "18-19",
+        "dia": "Viernes",
+        "detalle": "👤 (55) MB545-C // VIRTUAL (P)"
+    }
+]

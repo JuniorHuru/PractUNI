@@ -27,26 +27,31 @@ body{
     padding: 0 1.5rem;
 }
 
-.sidebar-nav{
-    padding: 0;
-}
-
 .sidebar-logo{
     padding: 1rem 1.5rem;
 }
 
 #sidebar.collapsed{
-    margin-left: -220px; /* Fijo 235 Todo */
+    margin-left: -235px; /* Fijo 235 Todo */
 }
 
 #barra{
     background-color: #f8f9fa;
 }
 
-a {
-    cursor: pointer;
+.boton-lateral{
+    color: black;
+    padding: 9px 15px;
     text-decoration: none;
     font-family: sans-serif;
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.boton-lateral:hover{
+    background-color: #a9bced;
 }
 
 small{
@@ -60,20 +65,22 @@ small{
 
 /* Menu Despegable */
 
-.list-group button{
-    font-size: 11px;
-    font-weight: bold;
-    width: 180px;
-    margin-left: 10px; /* izq decha */
-    border-color: #ebebeb; /* bordes */
-    background-color: #ebebeb;
+.Espacio-Icon{
+    margin-right: 5px;
 }
-.list-group button:hover{
-    background-color: #a8bdec;
+
+.foto{
+    text-decoration: none;
+    color: black;
 }
 
 .accordion-button:hover{
-    background-color: #a9bced;
+    background-color: #b5d1fc;
+    /*background-color: #a9bced;*/
+}
+
+.accordion-button{
+    border-radius: 3px;
 }
 
 .accordion-body{
@@ -85,16 +92,17 @@ small{
     font-size: 14px;
 }
 
-.subtex{
-    margin-left: 5px;
-}
-
 .accordion-button{
     height: 50px;
 }
 
 
 /* Superior */
+
+.btn:hover{
+    background-color: #4a73d9;
+
+}
 
 #barrasuperior{
     background-color: #224fb1;
@@ -115,7 +123,6 @@ small{
     min-width: 235px;
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 10px 0 rgba(122, 133, 134, 0.5);
-    z-index: 1111;
 }
 
 .main{
@@ -127,29 +134,10 @@ small{
     transition: all 0.35s ease-in-out;
 }
 
-a.sidebar-link{
-    padding: .625rem 1.625rem;
-    color: rgb(0, 0, 0);
-    position: relative;
-    display: block;
-    font-size: 1rem;
-}
-
 /* No Efecto */ 
-
-li{
-    list-style: none;
-}
-
-.sidebar-logo a{
-    color: black;
-    font-size: 1.25rem;
-    font-weight: 600;
-} 
 
 h3{
     font-size: 1.2375rem;
-    
 }
 
 .content{
@@ -158,10 +146,22 @@ h3{
     width: 100vw;
 }
 
+#offcanvasTop{
+    height: 100vh;
+}
+
 /* Responsive */ 
 
 @media (min-width:768px){
+
     .content{
         width: auto;
     }
+    
 }
+
+
+
+
+
+
