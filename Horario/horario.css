@@ -1,0 +1,16 @@
+/* Estilo para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center; /* Centra el texto en cada celda */
+}
+
+th {
+    background-color: #f2f2f2; /* Fondo claro para el encabezado */
+    font-weight: bold;
+}
