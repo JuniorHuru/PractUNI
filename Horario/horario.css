@@ -23,3 +23,14 @@ th {
         font-size: 9px;
     }
 }
+
+@media (max-width:430px){
+    th{
+        font-size: 8px;
+        font-weight: normal;
+    }
+    td{
+        font-size: 5px;
+    }
+}
+
