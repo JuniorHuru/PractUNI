@@ -37,7 +37,7 @@ function Tabla(filas, columnas) {
             for (let j = 0; j < columnas; j++) {
                 let celda = document.createElement("td");
                 if (j === 0) {
-                    celda.textContent = `${7 + i} - ${8 + i}` ; 
+                    celda.textContent = `${7 + i}-${8 + i}` ; 
                 }
                 fila.appendChild(celda);
             }
