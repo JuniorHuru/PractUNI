@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "codCurso": "BIF01",
+        "nomCurso": "NOMBRE DEL CURSO",
+        "secCurso": "C/D",
+        "codDocente": 87546374,
+        "docente": "NOMBRE DEL DOCENTE",
+        "teopra": "T/P",
+        "hora": "10-12",
+        "dia": "Miércoles",
+        "semestre": 20242
+    },
+    {
+        "id": 2,
+        "codCurso": "MAT02",
+        "nomCurso": "Cálculo Diferencial",
+        "secCurso": "B",
+        "codDocente": 87546375,
+        "docente": "Ing. María López",
+        "teopra": "P",
+        "hora": "8-10",
+        "dia": "Lunes",
+        "semestre": 20241
+    },
+    {
+        "id": 3,
+        "codCurso": "QUI03",
+        "nomCurso": "Química General",
+        "secCurso": "C",
+        "codDocente": 87546376,
+        "docente": "Dr. Luis Gómez",
+        "teopra": "T",
+        "hora": "12-14",
+        "dia": "Martes",
+        "semestre": 20241
+    },
+    {
+        "id": 4,
+        "codCurso": "FIS04",
+        "nomCurso": "Física Experimental",
+        "secCurso": "A",
+        "codDocente": 87546377,
+        "docente": "Dra. Sofía Torres",
+        "teopra": "P",
+        "hora": "14-16",
+        "dia": "Miércoles",
+        "semestre": 20242
+    },
+    {
+        "id": 5,
+        "codCurso": "INF05",
+        "nomCurso": "Introducción a la Programación",
+        "secCurso": "D",
+        "codDocente": 87546378,
+        "docente": "Ing. Carlos Fernández",
+        "teopra": "T",
+        "hora": "10-12",
+        "dia": "Jueves",
+        "semestre": 20241
+    },
+    {
+        "id": 6,
+        "codCurso": "HIS06",
+        "nomCurso": "Historia Universal",
+        "secCurso": "A",
+        "codDocente": 87546379,
+        "docente": "Dr. Andrea Ruiz",
+        "teopra": "P",
+        "hora": "16-18",
+        "dia": "Viernes",
+        "semestre": 20242
+    },
+    {
+        "id": 7,
+        "codCurso": "ART07",
+        "nomCurso": "Arte y Cultura",
+        "secCurso": "C",
+        "codDocente": 87546380,
+        "docente": "Lic. Ricardo Mejía",
+        "teopra": "T",
+        "hora": "8-10",
+        "dia": "Sábado",
+        "semestre": 20241
+    },
+    {
+        "id": 8,
+        "codCurso": "ART07",
+        "nomCurso": "Arte y Cultura",
+        "secCurso": "C",
+        "codDocente": 87546380,
+        "docente": "Lic. Ricardo Mejía",
+        "teopra": "T",
+        "hora": "8-10",
+        "dia": "Domingo",
+        "semestre": 20241
+    },
+    {
+        "id": 9,
+        "codCurso": "INF05",
+        "nomCurso": "Introducción a la Programación",
+        "secCurso": "D",
+        "codDocente": 87546378,
+        "docente": "Ing. Carlos Fernández",
+        "teopra": "T",
+        "hora": "10-12",
+        "dia": "Miércoles",
+        "semestre": 20241
+    },
+    {
+        "id": 10,
+        "codCurso": "INF05",
+        "nomCurso": "Introducción a la Programación",
+        "secCurso": "D",
+        "codDocente": 87546378,
+        "docente": "Ing. Carlos Fernández",
+        "teopra": "T",
+        "hora": "10-12",
+        "dia": "Viernes",
+        "semestre": 20241
+    }
+]

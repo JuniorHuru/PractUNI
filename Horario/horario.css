@@ -1,36 +1,76 @@
-/* Estilo para la tabla */
 table {
-    border-collapse: collapse;
     width: 100%;
+    border-collapse: collapse;
 }
 
 th, td {
     border: 1px solid black;
-    padding: 2px;
-    text-align: center; /* Centra el texto en cada celda */
+    text-align: center;
 }
 
-th {
-    background-color: #f2f2f2; /* Fondo claro para el encabezado */
+th, td {
+    padding: 4px;
+}
+
+th{
+    font-size: small;
+}
+
+.hora-columna {
+    width: 50px;          /* Ancho fijo */
+    font-size: 15px;       /* Tamaño de letra */
+    text-align: center;   /* Centrar texto */
+}
+
+td[rowspan] {
+    background-color: #d1e7dd; /* Verde claro */
     font-weight: bold;
+    color: #0f5132; /* Verde oscuro */
+    border: 2px solid #0f5132;
+    font-size: 15px;
 }
 
-@media (max-width:600px){
-    th{
+@media (max-width:1125px){
+    td[rowspan]{
+        font-size: 13px;
+    }
+    .hora-columna {
+        width: 50px;          /* Ancho fijo */
+        font-size: 12px;       /* Tamaño de letra */
+    }
+}
+
+@media (max-width:900px){
+    td[rowspan]{
         font-size: 11px;
     }
-    td{
+}
+
+@media (max-width:620px){
+    td[rowspan]{
+        font-size: 9px;
+    }
+    th, td {
+        padding: 2px;
+    }
+    th{
         font-size: 9px;
     }
 }
 
-@media (max-width:430px){
-    th{
-        font-size: 8px;
-        font-weight: normal;
-    }
-    td{
-        font-size: 5px;
+@media (max-width:390px){
+    .hora-columna {
+        width: 30px;          /* Ancho fijo */
+        font-size: 9px;       /* Tamaño de letra */
     }
 }
 
+@media (max-width:360px){
+    .hora-columna {
+        width: 20px;          /* Ancho fijo */
+        font-size: 5px;       /* Tamaño de letra */
+    }
+    th, td {
+        padding: 1px;
+    }
+}

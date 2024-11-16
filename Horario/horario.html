@@ -273,13 +273,8 @@
                             <div class="p-2">
                                 <div class="col-md-6">
                                     <label for="Ciclos" class="form-label"><strong style="color: #0048ff;">DEFINITIVO</strong></label>
-                                    <select class="form-select" id="Ciclos" onchange="Semestres()">
+                                    <select class="form-select" id="opciones">
                                         <option selected hidden>Elegir</option>
-                                        <option value="1">Ciclo 1</option>
-                                        <option value="2">Ciclo 2</option>
-                                        <option value="3">Ciclo 3</option>
-                                        <option value="4">Ciclo 4</option>
-                                        <option value="5">Ciclo 5</option>
                                     </select>
                                   </div>
                             </div>
@@ -289,8 +284,7 @@
                         <!-- Contenido / Horario -->
                         <div class="col-md-12">
                             <div id="contenido-div" class="p-3" style="background-color: #66cc33;">
-                                <div class="tabla"></div>
-                                
+                                <table id="tabla"></table>
                             </div>
                         </div>
                     </div>

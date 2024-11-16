@@ -1,6 +1,6 @@
 document.getElementById('opciones').addEventListener('change', function () {
     const semestreSeleccionado = parseInt(this.value);
-    fetch('horarios.json')
+    fetch('test.json')
         .then(response => response.json())
         .then(data => {
             const tabla = document.getElementById('tabla');
@@ -31,7 +31,7 @@ function crearTabla(data, semestreSeleccionado) {
             if (colIndex === 0) {
                 const celda = fila.insertCell();
                 celda.textContent = hora;
-                celda.classList.add('hora-columna');
+                celda.style.width = "45px";
             } else if (!ocupadas[filaIndex][colIndex]) {
                 const item = datosFiltrados.find(d => {
                     const [inicio, fin] = d.hora.split('-').map(h => parseInt(h));
@@ -55,7 +55,7 @@ function crearTabla(data, semestreSeleccionado) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('horarios.json')
+    fetch('test.json')
         .then(response => response.json())
         .then(data => {
             const semestresUnicos = [...new Set(data.map(item => item.semestre))];
