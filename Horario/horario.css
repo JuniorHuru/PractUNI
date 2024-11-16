@@ -65,10 +65,16 @@ td[rowspan] {
     }
 }
 
-@media (max-width:360px){
+@media (max-width:380px){
     .hora-columna {
-        width: 20px;          /* Ancho fijo */
-        font-size: 5px;       /* Tamaño de letra */
+        width: 50px;          /* Ancho fijo */
+        font-size: 9px;       /* Tamaño de letra */
+    }
+    th{
+        font-size: 7px;
+    }
+    td[rowspan]{
+        font-size: 7px;
     }
     th, td {
         padding: 1px;
