@@ -4,13 +4,28 @@
 
 .text-box {
     background-color: #224fb1; /* Fondo azul */
-    color: white; /* Texto blanco */
     padding:  5px 15px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
 }
 
 .Indicacion{
     font-size: 13px;
+}
+
+.contenedor-sombrado {
+    background-color: #f8f9fa; /* Gris claro que combina con blanco */
+    border: 1px solid #ddd; /* Borde gris suave */
+    color: #333; /* Texto gris oscuro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+    margin: 2px auto; /* Margen superior/inferior y centrado */
+    max-width: 600px; /* Ancho máximo */
+}
+
+.reloj {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 @media (max-width:1300px){

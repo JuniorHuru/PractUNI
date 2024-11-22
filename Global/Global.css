@@ -99,11 +99,6 @@ small{
 
 /* Superior */
 
-.btn:hover{
-    background-color: #4a73d9;
-
-}
-
 #barrasuperior{
     background-color: #224fb1;
     height: 67px;  /* 70 */

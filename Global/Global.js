@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     toggleButton.addEventListener("click", function () {
       // Solo muestra el offcanvas si el ancho es menor a 900px
-      if (window.innerWidth <= 820) {
+      if (window.innerWidth <= 850) {
         offcanvasElement.show();
       }
     });
 
     sidebarToggler.addEventListener("click", function () {
       // Solo colapsa el sidebar si el ancho es mayor a 901px
-      if (window.innerWidth >= 821) {
+      if (window.innerWidth >= 851) {
         document.querySelector("#sidebar").classList.toggle("collapsed");
       }
     });
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleSidebarOnResize() {
     const sidebar = document.querySelector("#sidebar");
-    if (window.innerWidth <= 820) {
+    if (window.innerWidth <= 850) {
         sidebar.classList.add("collapsed"); // Añade la clase si es menor 
     } else {
         sidebar.classList.remove("collapsed"); // Remueve la clase si es mayor 
