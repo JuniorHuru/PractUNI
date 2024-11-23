@@ -3,13 +3,17 @@
 }
 
 .text-box {
-    background-color: #224fb1; /* Fondo azul */
-    padding:  5px 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: #224fb1; 
+    padding:  5px 15px; 
+    border-radius: 5px;
 }
 
 .Indicacion{
     font-size: 13px;
+}
+
+.text{
+    color: black;
 }
 
 .contenedor-sombrado {
@@ -20,13 +24,28 @@
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra elegante */
     margin: 2px auto; /* Margen superior/inferior y centrado */
-    max-width: 600px; /* Ancho máximo */
+    height: 95%;
 }
 
 .reloj {
     font-size: 1rem;
     font-weight: bold;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #224fb1;
+    color: white;
+}
+
 
 @media (max-width:1300px){
     .Indicacion{
@@ -40,6 +59,24 @@
 @media (max-width:1100px){
     .Indicacion{
         font-size: 9px;
+    }
+}
+
+@media (max-width:490px){
+    table {
+        font-size: 13px;
+    }
+    th, td {
+        padding: 3px;
+    }
+}
+
+@media (max-width:390px){
+    table {
+        font-size: 11px;
+    }
+    th, td {
+        padding: 3px;
     }
 }
 

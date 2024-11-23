@@ -272,28 +272,67 @@
                         <!-- Derecha -->
                         <div class="col-md-6">
                             <div class="contenedor-sombrado p-2 text-center text-white">
-                                <label for="Ciclos" class="form-label">
-                                    <strong style="color: #0048ff;">SEMESTRE :</strong>
-                                </label>
-                                <select class="form-select" id="opciones">
-                                    <option selected hidden>Elegir</option>
-                                </select>
-                                    <!-- Responsividad aplicada -->
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="formGroupExampleInput" style="color: #0048ff;" class="form-label"> <strong>Semestre :</strong></label>
+                                        <select class="form-select" id="Semestre">
+                                            <!-- <option selected hidden>Elegir</option> -->
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="formGroupExampleInput" style="color: #0048ff;" class="form-label"> <strong>Mes :</strong></label>
+                                        <select class="form-select" id="Mes">
+                                            <option selected hidden>Elegir</option>
+                                        </select>
+                                    </div>
+                                  </div>
+                                    <!-- Guia -->
                                     <div class="d-flex justify-content-center gap-2 flex-wrap p-3">
                                         <span class="Indicacion text-box">P: PUNTUAL</span>
                                         <span class="Indicacion text-box">T: TARDANZA (MIN)</span>
                                         <span class="Indicacion text-box">F: FALTA</span>
                                         <span class="Indicacion text-box">N.M: N.N</span>
                                       </div>
+                                      <span class="Resumen text">Resumen de Asistencia Mensual <div id="suma" class="suma"></div> </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <!-- Contenido / Horario -->
+                    <div class="row mt-2">
+                        <!-- Contenido / Asistencia -->
                         <div class="col-md-12">
-                            <div id="contenido-div" class="p-3 text-center text-white" style="background-color: #ffc107; border: 2px solid #d39e00;">
-                                Contenido / Horario
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center" style="margin-bottom: 5px;">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                            <div id="contenido-div" class="p-2 text-center" >
+                                <table id="tabla-asistencia">
+                                    <thead>
+                                        <tr>
+                                            <th>Día</th>
+                                            <th>Curso</th>
+                                            <th>Horario</th>
+                                            <th>Marcación</th>
+                                            <th>Ext</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <!-- Contenido / Asistencia -->
                             </div>
                         </div>
                     </div>
