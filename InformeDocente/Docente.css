@@ -1,0 +1,30 @@
+.btn-outline-danger{
+    margin: 10px 0px 10px 5px;
+}
+
+.testeo{
+  font-size: 25px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width:540px){
+  .botones-primero .btn svg {
+    width: 20px; /* Cambiar ancho */
+    height: 20px; /* Cambiar altura */
+  }
+  .botones-primero .btn {
+    padding: 0px 4px 0px 4px;
+  }
+  .testeo{
+    font-size: 15px;
+  }
+}

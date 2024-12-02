@@ -16,7 +16,7 @@
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="asistencia.css">
+    <link rel="stylesheet" href="Docente.css">
     <link rel="stylesheet" href="../Global/Global.css">
 </head>
 <!-- HEAD -->
@@ -82,7 +82,7 @@
                                         </svg> 
                                         Mi Horario de Clases </a>
 
-                                    <a class="boton-lateral" href="../InformeDocente/Docente.html"> 
+                                    <a class="boton-lateral" href="Docente.html" style="background-color: #a9bced;"> 
                                         <svg class="Espacio-Icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
                                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
@@ -104,7 +104,7 @@
                                           </svg>
                                         Tutoria Alumnos </a>
 
-                                    <a class="boton-lateral" href="asistencia.html" style="background-color: #a9bced;"> 
+                                    <a class="boton-lateral" href="../Asistencia/asistencia.html"> 
                                         <svg class="Espacio-Icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3-week-fill" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2h16a2 2 0 0 0-2-2zM0 14V3h16v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m12-8a1 1 0 1 0 2 0 1 1 0 0 0-2 0M5 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0m5-2a1 1 0 1 1 0-2 1 1 0 0 1 0 2M2 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
                                             </svg>
@@ -254,99 +254,230 @@
             </nav>
             <main class="content px-2 py-2">
                 <div class="container-fluid">
-                    <div class="row">
-                        <!-- Izquierda -->
-                        <div class="col-md-6">
-                            <div class="contenedor-sombrado p-2 text-center">
-                                <div class="container text-center mt-2">
-                                    Presionar el Boton para registrar su entrada y salida de clases
-                                  </div>
-                                  <button class="btn btn-success mt-2">Registrar Entrada / Salida <div id="reloj" class="reloj"></div> </button>
-                                  <div class="container justify-content-center flex-wrap p-2">
-                                    <button class="btn btn-primary m-2">Tomar Asistencia Alumnos</button>
-                                    <button class="btn btn-warning">Solicitar Justificacion</button>
-                                  </div>
-                            </div>
+                    <div class="d-flex position-relative"> 
+                        <img src="../img/foto.jpg" class="flex-shrink-0 me-3" style="width: 150px; height: 150px;">
+                        <div>
+                          <h5 class="mt-0" style="margin-bottom: 0px;">HUARANGA RUIZ, JUNIOR EDUARDO</h5>
+                          <h6>1515424</h6>
+                          
+                          <button type="button" class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                            </svg>
+                            </button>
+                          <button type="button" class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                            <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"/>
+                            </svg>
+                            </button>
                         </div>
+                      </div>
+
+                    <button type="button" class="btn btn-outline-danger">Descargar PDF</button>
+
+                    <!-- Contenido / Docente --> 
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="primera-tab" data-bs-toggle="tab" data-bs-target="#primera-tab-pane" type="button" role="tab" aria-controls="primera-tab-pane" aria-selected="true">1er</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="segunda-tab" data-bs-toggle="tab" data-bs-target="#segunda-tab-pane" type="button" role="tab" aria-controls="segundo-tab-pane" aria-selected="false">2do</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tercera-tab" data-bs-toggle="tab" data-bs-target="#tercera-tab-pane" type="button" role="tab" aria-controls="tercera-tab-pane" aria-selected="false">3ro</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cuarta-tab" data-bs-toggle="tab" data-bs-target="#cuarta-tab-pane" type="button" role="tab" aria-controls="cuarta-tab-pane" aria-selected="false">4to</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="primera-tab-pane" role="tabpanel" aria-labelledby="primera-tab" tabindex="0">
+                            <div class="contenedor-sombrado p-3" style="background-color: #f5f5f5;">
+                                <div class="container">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h1 class="testeo mb-0">1.- Datos Personales</h1>
+                                        <div class="botones-primero"> <!-- Clase específica -->
+                                            <!-- Botón 1 -->
+                                            <button type="button" class="btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"/>
+                                                </svg>
+                                            </button>
+                                            <!-- Botón 2 -->
+                                            <button type="button" class="btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                                </svg>
+                                            </button>
+                                            <!-- Botón 3 -->
+                                            <button type="button" class="btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- Columna izquierda -->
+                                        <div class="col-md-6">
+                                            <!-- Fila 1: DNI y Fecha de nacimiento -->
+                                            <div class="row g-2 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="number" class="form-control" id="floatingDNI" placeholder="Ingresa un número" required>
+                                                        <label for="floatingDNI">DNI</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="floatingDate" placeholder="Selecciona una fecha" required>
+                                                        <label for="floatingDate">Fecha de nacimiento</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                         
-                        <!-- Derecha -->
-                        <div class="col-md-6">
-                            <div class="contenedor-sombrado p-2 text-center text-white">
-                                <div class="row">
-                                    <div class="col">
-                                        <label for="formGroupExampleInput" style="color: #0048ff;" class="form-label"> <strong>Semestre :</strong></label>
-                                        <select class="form-select" id="Semestre">
-                                            <!-- <option selected hidden>Elegir</option> -->
-                                        </select>
+                                            <!-- Fila 2: Celular y Teléfono fijo -->
+                                            <div class="row g-2 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="number" class="form-control" id="floatingCelular" placeholder="Ingresa un número" required>
+                                                        <label for="floatingCelular">Celular</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="number" class="form-control" id="floatingTelefono" placeholder="Ingresa un número" required>
+                                                        <label for="floatingTelefono">Teléfono Fijo</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <!-- Fila 3: Género y Grupo sanguíneo -->
+                                            <div class="row g-2 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="floatingSelectGender" aria-label="Seleccionar género" required>
+                                                            <option selected hidden>Elegir</option>
+                                                            <option value="1">Masculino</option>
+                                                            <option value="2">Femenino</option>
+                                                            <option value="3">Otros</option>
+                                                        </select>
+                                                        <label for="floatingSelectGender">Género</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="floatingSelectBlood" aria-label="Seleccionar grupo sanguíneo" required>
+                                                            <option selected hidden>Elegir</option>
+                                                            <option value="1">AB+</option>
+                                                            <option value="2">A+</option>
+                                                            <option value="3">B+</option>
+                                                            <option value="4">O+</option>
+                                                            <option value="5">AB-</option>
+                                                            <option value="6">A-</option>
+                                                            <option value="7">B-</option>
+                                                            <option value="8">O-</option>
+                                                        </select>
+                                                        <label for="floatingSelectBlood">Grupo Sanguíneo</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                        <!-- Columna derecha -->
+                                        <div class="col-md-6">
+                                            <!-- Fila 1: Estado civil y RUC -->
+                                            <div class="row g-2 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="floatingSelectCivil" aria-label="Seleccionar estado civil" required>
+                                                            <option selected hidden>Elegir</option>
+                                                            <option value="1">Soltero</option>
+                                                            <option value="2">Casado</option>
+                                                            <option value="3">Viudo</option>
+                                                        </select>
+                                                        <label for="floatingSelectCivil">Estado Civil</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="number" class="form-control" id="floatingRUC" placeholder="Ingresa un número" required>
+                                                        <label for="floatingRUC">RUC</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <!-- Fila 2: Emails -->
+                                            <div class="row g-2">
+                                                <div class="col-md">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">Email(s)</span>
+                                                        <input type="text" aria-label="Primer email" class="form-control" placeholder="Email principal">
+                                                        <input type="text" aria-label="Segundo email" class="form-control" placeholder="Email secundario">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h1 class="testeo mb-0 mt-3">Lugar de Nacimiento</h1>
+                                        </div>
                                     </div>
-                                    <div class="col">
-                                        <label for="formGroupExampleInput" style="color: #0048ff;" class="form-label"> <strong>Mes :</strong></label>
-                                        <select class="form-select" id="Mes">
-                                            <option selected hidden>Elegir</option>
-                                        </select>
-                                    </div>
-                                  </div>
-                                    <!-- Guia -->
-                                    <div class="d-flex justify-content-center gap-2 flex-wrap p-3">
-                                        <span class="Indicacion text-box">P: PUNTUAL</span>
-                                        <span class="Indicacion text-box">T: TARDANZA (MIN)</span>
-                                        <span class="Indicacion text-box">F: FALTA</span>
-                                        <span class="Indicacion text-box">N.M: N.N</span>
-                                      </div>
-                                      <span class="Resumen text">Resumen de Asistencia Mensual <div id="suma" class="suma"></div> </span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mt-2">
-                        <!-- Contenido / Asistencia -->
-                        <div class="col-md-12">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination justify-content-center" style="margin-bottom: 5px;">
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                      <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                      <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </nav>
-                            <div id="contenido-div" class="p-2 text-center" >
-                                <table id="tabla-asistencia">
-                                    <thead>
-                                        <tr>
-                                            <th>Día</th>
-                                            <th>Curso</th>
-                                            <th>Horario</th>
-                                            <th>Marcación</th>
-                                            <th>Ext</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    </tbody>
-                                </table>
-                                <!-- Contenido / Asistencia -->
-                            </div>
+                        
+                        <div class="tab-pane fade" id="segunda-tab-pane" role="tabpanel" aria-labelledby="segunda-tab" tabindex="0">
+                            Pagina 2
+                        </div>
+                        <div class="tab-pane fade" id="tercera-tab-pane" role="tabpanel" aria-labelledby="tercera-tab" tabindex="0">
+                            Pagina 3
+                        </div>
+                        <div class="tab-pane fade" id="cuarta-tab-pane" role="tabpanel" aria-labelledby="cuarto-tab" tabindex="0">
+                            Pagina 4
                         </div>
                     </div>
+                    <!-- Contenido / Docente -->
                 </div>
-                
             </main>
         </div>
-
-  </div> 
 </body>
 <!-- BODY -->
 
  <!-- JavaScript -->
- <script src="asistencia.js"></script>
+ <script src="Docente.js"></script>
  <script src="../Global/Global.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
+<!-- PUEDE SER DESECHABLE
+                                            <div class="input-group">
+                                                <span class="input-group-text">Brevete</span>
+                                                <input type="text" aria-label="First name" class="form-control">
+                                              </div>
+                                              <div class="form-floating">
+                                                <select class="form-select" id="floatingSelectCivil" aria-label="Seleccionar estado civil" required>
+                                                    <option selected hidden>Elegir</option>
+                                                    <option value="1">N1</option>
+                                                    <option value="2">N2</option>
+                                                    <option value="3">N3</option>
+                                                    <option value="4">O1</option>
+                                                </select>
+                                                <label for="floatingSelectCivil">Categoria</label>
+                                            </div>
+
+
+                                            <button type="button" class="btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+                                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"/>
+                                            </svg>
+                                            </button>
+                                        <button type="button" class="btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                              </svg>
+                                        </button>
+                                        <button type="button" class="btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                                            </svg>
+                                        </button>
+                                            -->
