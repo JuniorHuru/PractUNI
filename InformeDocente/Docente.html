@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<html>
 <!-- HEAD -->
 <head>
     <!-- Metadatos -->
@@ -10,14 +9,14 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Titulo -->
-    <title>Asistencia | Front-End</title>
+    <title>Distribucion | Front-End</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../img/uni_icon.png">
+    <link rel="icon" type="image/x-icon" href="img/uni_icon.png">
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="Docente.css">
     <link rel="stylesheet" href="../Global/Global.css">
+    <link rel="stylesheet" href="Docente.css">
 </head>
 <!-- HEAD -->
 
@@ -25,36 +24,64 @@
 
 <!-- BODY -->
 <body>
-    <div class="wrapper">
-        <!--Sidebar-->
-        <aside id="sidebar">
-            <div id="barra" class="h-100">
-                <div class="sidebar-logo">
-                    <div class="d-flex border-bottom pb-2">
-                        <a class="foto" href="../index.html"> <img src="../img/uni.png" alt="Logo" width="30" height="40" class="me-3"> 
-                        <div>
-                            <h6 id="Grosor" class="m-0">UNI EARPFIM</h6> </a>
-                            <small>PRACTICANTE</small>
-                        </div>
+
+    <!-- Barra Nombre -->
+    <div class="d-block px-3 py-2 text-center text-bold skippy">
+        <a href="#" class="tex text-decoration-none">HUARANGA RUIZ, JUNIOR EDUARDO</a>
+    </div>
+
+    <!-- Barra superior -->
+    <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+        <div class="B-SuBlanca container-fluid d-flex align-items-md-center">
+
+            <!-- Botón para móviles -->
+            <button class="btn d-md-none py-0" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+
+            <!-- LOGO -->
+            <div class="sidebar-logo bd-search position-relative me-auto">
+                <div class="d-flex">
+                    <a class="foto" href="../index.html">
+                        <img src="../img/uni.png" alt="Logo" width="30" height="40" class="me-3">
+                    </a>
+                    <div>
+                        <a class="foto" href="../index.html">
+                            <h6 id="Grosor" class="m-0">UNI EARPFIM</h6>
+                        </a>
+                        <small>PRACTICANTE</small>
                     </div>
                 </div>
-            <!-- Contenido Lateral /-->
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                <div class="offcanvas-header">
-                    <a class="foto" href="../index.html"> <img src="../img/uni.png" alt="Logo" width="30" height="40" class="me-3"> 
-                        <div>
-                            <h6 id="Grosor" class="m-0">UNI EARPFIM</h6> </a>
-                            <small>PRACTICANTE</small>
-                        </div>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div id="Arriba" class="offcanvas-body">
-                </div>
-              </div>            
-            <div id="Lateral" class="container">
+            </div>
+
+            <!-- Configuracion -->
+            <div class="dropdown ms-3">
+                <button class="btn btn-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                    <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                    <li><a class="dropdown-item" href="#">Cambiar Clave</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+          
+        </div>
+    </nav>
+    
+    <div class="container- bd-layout" style="background-color: #f8f9fa;">
+
+        <!-- BARRA LATERAL -->
+        <aside id="sidebar" class="bd-sidebar">
+            <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
                 <div class="accordion small" id="accordionExample">
-                    <!-- Cuerpo-1 / #12 -->
-                        <div class="accordion small" id="accordionExample">
+
                         <!-- Cuerpo-1 / #12 -->
                         <div class="accordion-item small">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -82,7 +109,7 @@
                                         </svg> 
                                         Mi Horario de Clases </a>
 
-                                    <a class="boton-lateral" href="Docente.html" style="background-color: #a9bced;"> 
+                                    <a class="boton-lateral" href="Docente.html"> 
                                         <svg class="Espacio-Icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
                                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
@@ -237,247 +264,212 @@
                           </div>
                         </div>
         
-                        </div>
                 </div>
-            </div>
-        </aside>
-        <!--Main Component-->
-        <div class="main">
-            <nav id="barrasuperior" class="navbar navbar-expand px-3 border-bottom">
-                <!--Botton for sidebar toggle-->
-                <button id="toggleButton" class="btn" type="button" aria-controls="offcanvasTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list" viewBox="0 0 16 16" stroke="white" stroke-width="0.5">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                </button>
-                <h5 id="name" class="m-0">HUARANGA RUIZ, JUNIOR EDUARDO</h5>
             </nav>
-            <main class="content px-2 py-2">
-                <div class="container-fluid">
-                    <div class="d-flex position-relative"> 
-                        <img src="../img/foto.jpg" class="flex-shrink-0 me-3" style="width: 150px; height: 150px;">
-                        <div>
-                          <h5 class="mt-0" style="margin-bottom: 0px;">HUARANGA RUIZ, JUNIOR EDUARDO</h5>
-                          <h6>1515424</h6>
-                          
-                          <button type="button" class="btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
-                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
-                            </svg>
-                            </button>
-                          <button type="button" class="btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
-                            <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"/>
-                            </svg>
-                            </button>
-                        </div>
-                      </div>
+        </aside>
 
-                    <button type="button" class="btn btn-outline-danger">Descargar PDF</button>
+        <!-- Contenido -->
+        <main class="bd-main order-1">
 
-                    <!-- Contenido / Docente --> 
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="primera-tab" data-bs-toggle="tab" data-bs-target="#primera-tab-pane" type="button" role="tab" aria-controls="primera-tab-pane" aria-selected="true">1er</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="segunda-tab" data-bs-toggle="tab" data-bs-target="#segunda-tab-pane" type="button" role="tab" aria-controls="segundo-tab-pane" aria-selected="false">2do</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="tercera-tab" data-bs-toggle="tab" data-bs-target="#tercera-tab-pane" type="button" role="tab" aria-controls="tercera-tab-pane" aria-selected="false">3ro</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="cuarta-tab" data-bs-toggle="tab" data-bs-target="#cuarta-tab-pane" type="button" role="tab" aria-controls="cuarta-tab-pane" aria-selected="false">4to</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="primera-tab-pane" role="tabpanel" aria-labelledby="primera-tab" tabindex="0">
-                            <div class="contenedor-sombrado p-3" style="background-color: #f5f5f5;">
-                                <div class="container">
-                                    <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h1 class="testeo mb-0">1.- Datos Personales</h1>
-                                        <div class="botones-primero"> <!-- Clase específica -->
-                                            <!-- Botón 1 -->
-                                            <button type="button" class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
-                                                    <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"/>
-                                                </svg>
-                                            </button>
-                                            <!-- Botón 2 -->
-                                            <button type="button" class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                                                </svg>
-                                            </button>
-                                            <!-- Botón 3 -->
-                                            <button type="button" class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <!-- Columna izquierda -->
-                                        <div class="col-md-6">
-                                            <!-- Fila 1: DNI y Fecha de nacimiento -->
-                                            <div class="row g-2 mb-3">
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <input type="number" class="form-control" id="floatingDNI" placeholder="Ingresa un número" required>
-                                                        <label for="floatingDNI">DNI</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <input type="date" class="form-control" id="floatingDate" placeholder="Selecciona una fecha" required>
-                                                        <label for="floatingDate">Fecha de nacimiento</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                        
-                                            <!-- Fila 2: Celular y Teléfono fijo -->
-                                            <div class="row g-2 mb-3">
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <input type="number" class="form-control" id="floatingCelular" placeholder="Ingresa un número" required>
-                                                        <label for="floatingCelular">Celular</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <input type="number" class="form-control" id="floatingTelefono" placeholder="Ingresa un número" required>
-                                                        <label for="floatingTelefono">Teléfono Fijo</label>
-                                                    </div>
+            <div class="bd-intro">
+                <div class="main">
+
+                    <main class="content px-2 py-2">
+                        <div class="container-fluid">
+                            <div class="d-flex position-relative"> 
+                                <img src="../img/foto.jpg" class="flex-shrink-0 me-3" style="width: 150px; height: 150px;">
+                                <div>
+                                  <h5 class="mt-0" style="margin-bottom: 0px;">HUARANGA RUIZ, JUNIOR EDUARDO</h5>
+                                  <h6>1515424</h6>
+                                  
+                                  <button type="button" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                                    <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                                    </svg>
+                                    </button>
+                                  <button type="button" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                                    <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"/>
+                                    </svg>
+                                    </button>
+                                </div>
+                              </div>
+        
+                            <button type="button" class="btn btn-outline-danger">Descargar PDF</button>
+        
+                            <!-- Contenido / Docente --> 
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="primera-tab" data-bs-toggle="tab" data-bs-target="#primera-tab-pane" type="button" role="tab" aria-controls="primera-tab-pane" aria-selected="true">1er</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="segunda-tab" data-bs-toggle="tab" data-bs-target="#segunda-tab-pane" type="button" role="tab" aria-controls="segundo-tab-pane" aria-selected="false">2do</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tercera-tab" data-bs-toggle="tab" data-bs-target="#tercera-tab-pane" type="button" role="tab" aria-controls="tercera-tab-pane" aria-selected="false">3ro</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="cuarta-tab" data-bs-toggle="tab" data-bs-target="#cuarta-tab-pane" type="button" role="tab" aria-controls="cuarta-tab-pane" aria-selected="false">4to</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="primera-tab-pane" role="tabpanel" aria-labelledby="primera-tab" tabindex="0">
+                                    <div class="contenedor-sombrado p-3" style="background-color: #f5f5f5;">
+                                        <div class="container">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h1 class="testeo mb-0">1.- Datos Personales</h1>
+                                                <div class="botones-primero"> <!-- Clase específica -->
+                                                    <!-- Botón 1 -->
+                                                    <button type="button" class="btn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+                                                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"/>
+                                                        </svg>
+                                                    </button>
+                                                    <!-- Botón 2 -->
+                                                    <button type="button" class="btn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                                        </svg>
+                                                    </button>
+                                                    <!-- Botón 3 -->
+                                                    <button type="button" class="btn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                                                        </svg>
+                                                    </button>
                                                 </div>
                                             </div>
-                        
-                                            <!-- Fila 3: Género y Grupo sanguíneo -->
-                                            <div class="row g-2 mb-3">
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="floatingSelectGender" aria-label="Seleccionar género" required>
-                                                            <option selected hidden>Elegir</option>
-                                                            <option value="1">Masculino</option>
-                                                            <option value="2">Femenino</option>
-                                                            <option value="3">Otros</option>
-                                                        </select>
-                                                        <label for="floatingSelectGender">Género</label>
+                                            <div class="row">
+                                                <!-- Columna izquierda -->
+                                                <div class="col-md-6">
+                                                    <!-- Fila 1: DNI y Fecha de nacimiento -->
+                                                    <div class="row g-2 mb-3">
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <input type="number" class="form-control" id="floatingDNI" placeholder="Ingresa un número" required>
+                                                                <label for="floatingDNI">DNI</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <input type="date" class="form-control" id="floatingDate" placeholder="Selecciona una fecha" required>
+                                                                <label for="floatingDate">Fecha de nacimiento</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                
+                                                    <!-- Fila 2: Celular y Teléfono fijo -->
+                                                    <div class="row g-2 mb-3">
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <input type="number" class="form-control" id="floatingCelular" placeholder="Ingresa un número" required>
+                                                                <label for="floatingCelular">Celular</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <input type="number" class="form-control" id="floatingTelefono" placeholder="Ingresa un número" required>
+                                                                <label for="floatingTelefono">Teléfono Fijo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                
+                                                    <!-- Fila 3: Género y Grupo sanguíneo -->
+                                                    <div class="row g-2 mb-3">
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <select class="form-select" id="floatingSelectGender" aria-label="Seleccionar género" required>
+                                                                    <option selected hidden>Elegir</option>
+                                                                    <option value="1">Masculino</option>
+                                                                    <option value="2">Femenino</option>
+                                                                    <option value="3">Otros</option>
+                                                                </select>
+                                                                <label for="floatingSelectGender">Género</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <select class="form-select" id="floatingSelectBlood" aria-label="Seleccionar grupo sanguíneo" required>
+                                                                    <option selected hidden>Elegir</option>
+                                                                    <option value="1">AB+</option>
+                                                                    <option value="2">A+</option>
+                                                                    <option value="3">B+</option>
+                                                                    <option value="4">O+</option>
+                                                                    <option value="5">AB-</option>
+                                                                    <option value="6">A-</option>
+                                                                    <option value="7">B-</option>
+                                                                    <option value="8">O-</option>
+                                                                </select>
+                                                                <label for="floatingSelectBlood">Grupo Sanguíneo</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="floatingSelectBlood" aria-label="Seleccionar grupo sanguíneo" required>
-                                                            <option selected hidden>Elegir</option>
-                                                            <option value="1">AB+</option>
-                                                            <option value="2">A+</option>
-                                                            <option value="3">B+</option>
-                                                            <option value="4">O+</option>
-                                                            <option value="5">AB-</option>
-                                                            <option value="6">A-</option>
-                                                            <option value="7">B-</option>
-                                                            <option value="8">O-</option>
-                                                        </select>
-                                                        <label for="floatingSelectBlood">Grupo Sanguíneo</label>
+                                
+                                                <!-- Columna derecha -->
+                                                <div class="col-md-6">
+                                                    <!-- Fila 1: Estado civil y RUC -->
+                                                    <div class="row g-2 mb-3">
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <select class="form-select" id="floatingSelectCivil" aria-label="Seleccionar estado civil" required>
+                                                                    <option selected hidden>Elegir</option>
+                                                                    <option value="1">Soltero</option>
+                                                                    <option value="2">Casado</option>
+                                                                    <option value="3">Viudo</option>
+                                                                </select>
+                                                                <label for="floatingSelectCivil">Estado Civil</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <input type="number" class="form-control" id="floatingRUC" placeholder="Ingresa un número" required>
+                                                                <label for="floatingRUC">RUC</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                
+                                                    <!-- Fila 2: Emails -->
+                                                    <div class="row g-2">
+                                                        <div class="col-md">
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Email(s)</span>
+                                                                <input type="text" aria-label="Primer email" class="form-control" placeholder="Email principal">
+                                                                <input type="text" aria-label="Segundo email" class="form-control" placeholder="Email secundario">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h1 class="testeo mb-0 mt-3">Lugar de Nacimiento</h1>
                                                 </div>
                                             </div>
-                                        </div>
-                        
-                                        <!-- Columna derecha -->
-                                        <div class="col-md-6">
-                                            <!-- Fila 1: Estado civil y RUC -->
-                                            <div class="row g-2 mb-3">
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="floatingSelectCivil" aria-label="Seleccionar estado civil" required>
-                                                            <option selected hidden>Elegir</option>
-                                                            <option value="1">Soltero</option>
-                                                            <option value="2">Casado</option>
-                                                            <option value="3">Viudo</option>
-                                                        </select>
-                                                        <label for="floatingSelectCivil">Estado Civil</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md">
-                                                    <div class="form-floating">
-                                                        <input type="number" class="form-control" id="floatingRUC" placeholder="Ingresa un número" required>
-                                                        <label for="floatingRUC">RUC</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                        
-                                            <!-- Fila 2: Emails -->
-                                            <div class="row g-2">
-                                                <div class="col-md">
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">Email(s)</span>
-                                                        <input type="text" aria-label="Primer email" class="form-control" placeholder="Email principal">
-                                                        <input type="text" aria-label="Segundo email" class="form-control" placeholder="Email secundario">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h1 class="testeo mb-0 mt-3">Lugar de Nacimiento</h1>
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <div class="tab-pane fade" id="segunda-tab-pane" role="tabpanel" aria-labelledby="segunda-tab" tabindex="0">
+                                    Pagina 2
+                                </div>
+                                <div class="tab-pane fade" id="tercera-tab-pane" role="tabpanel" aria-labelledby="tercera-tab" tabindex="0">
+                                    Pagina 3
+                                </div>
+                                <div class="tab-pane fade" id="cuarta-tab-pane" role="tabpanel" aria-labelledby="cuarto-tab" tabindex="0">
+                                    Pagina 4
+                                </div>
                             </div>
+                            <!-- Contenido / Docente -->
                         </div>
-                        
-                        <div class="tab-pane fade" id="segunda-tab-pane" role="tabpanel" aria-labelledby="segunda-tab" tabindex="0">
-                            Pagina 2
-                        </div>
-                        <div class="tab-pane fade" id="tercera-tab-pane" role="tabpanel" aria-labelledby="tercera-tab" tabindex="0">
-                            Pagina 3
-                        </div>
-                        <div class="tab-pane fade" id="cuarta-tab-pane" role="tabpanel" aria-labelledby="cuarto-tab" tabindex="0">
-                            Pagina 4
-                        </div>
-                    </div>
-                    <!-- Contenido / Docente -->
+                    </main>
                 </div>
-            </main>
-        </div>
+            </div>
+            
+        </main>
+    </div>
+    
 </body>
 <!-- BODY -->
-
- <!-- JavaScript -->
- <script src="Docente.js"></script>
- <script src="../Global/Global.js"></script>
+<!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="Docente.js"></script>
+
 </html>
-<!-- PUEDE SER DESECHABLE
-                                            <div class="input-group">
-                                                <span class="input-group-text">Brevete</span>
-                                                <input type="text" aria-label="First name" class="form-control">
-                                              </div>
-                                              <div class="form-floating">
-                                                <select class="form-select" id="floatingSelectCivil" aria-label="Seleccionar estado civil" required>
-                                                    <option selected hidden>Elegir</option>
-                                                    <option value="1">N1</option>
-                                                    <option value="2">N2</option>
-                                                    <option value="3">N3</option>
-                                                    <option value="4">O1</option>
-                                                </select>
-                                                <label for="floatingSelectCivil">Categoria</label>
-                                            </div>
-
-
-                                            <button type="button" class="btn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
-                                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"/>
-                                            </svg>
-                                            </button>
-                                        <button type="button" class="btn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
-                                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
-                                              </svg>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                                            </svg>
-                                        </button>
-                                            -->

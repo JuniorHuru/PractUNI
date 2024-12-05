@@ -23,36 +23,64 @@
 
 <!-- BODY -->
 <body>
-    <div class="wrapper">
-        <!--Sidebar-->
-        <aside id="sidebar">
-            <div id="barra" class="h-100">
-                <div class="sidebar-logo">
-                    <div class="d-flex border-bottom pb-2">
-                        <a class="foto" href="index.html"> <img src="img/uni.png" alt="Logo" width="30" height="40" class="me-3"> 
-                        <div>
-                            <h6 id="Grosor" class="m-0">UNI EARPFIM</h6> </a>
-                            <small>PRACTICANTE</small>
-                        </div>
+
+    <!-- Barra Nombre -->
+    <div class="d-block px-3 py-2 text-center text-bold skippy">
+        <a href="#" class="tex text-decoration-none">HUARANGA RUIZ, JUNIOR EDUARDO</a>
+    </div>
+
+    <!-- Barra superior -->
+    <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+        <div class="B-SuBlanca container-fluid d-flex align-items-md-center">
+
+            <!-- Botón para móviles -->
+            <button class="btn d-md-none py-0" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+
+            <!-- LOGO -->
+            <div class="sidebar-logo bd-search position-relative me-auto">
+                <div class="d-flex">
+                    <a class="foto" href="../index.html">
+                        <img src="../img/uni.png" alt="Logo" width="30" height="40" class="me-3">
+                    </a>
+                    <div>
+                        <a class="foto" href="../index.html">
+                            <h6 id="Grosor" class="m-0">UNI EARPFIM</h6>
+                        </a>
+                        <small>PRACTICANTE</small>
                     </div>
                 </div>
-            <!-- Contenido Lateral /-->
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                <div class="offcanvas-header">
-                    <a class="foto" href="index.html"> <img src="img/uni.png" alt="Logo" width="30" height="40" class="me-3"> 
-                        <div>
-                            <h6 id="Grosor" class="m-0">UNI EARPFIM</h6> </a>
-                            <small>PRACTICANTE</small>
-                        </div>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div id="Arriba" class="offcanvas-body">
-                </div>
-              </div>            
-            <div id="Lateral" class="container">
+            </div>
+
+            <!-- Configuracion -->
+            <div class="dropdown ms-3">
+                <button class="btn btn-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                    <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                    <li><a class="dropdown-item" href="#">Cambiar Clave</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+          
+        </div>
+    </nav>
+    
+    <div class="container- bd-layout" style="background-color: #f8f9fa;">
+
+        <!-- BARRA LATERAL -->
+        <aside id="sidebar" class="bd-sidebar">
+            <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
                 <div class="accordion small" id="accordionExample">
-                    <!-- Cuerpo-1 / #12 -->
-                        <div class="accordion small" id="accordionExample">
+
                         <!-- Cuerpo-1 / #12 -->
                         <div class="accordion-item small">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -235,37 +263,60 @@
                           </div>
                         </div>
         
-                        </div>
                 </div>
-            </div>
-        </aside>
-        <!--Main Component-->
-        <div class="main">
-            <nav id="barrasuperior" class="navbar navbar-expand px-3 border-bottom">
-                <!--Botton for sidebar toggle-->
-                <button id="toggleButton" class="btn" type="button" aria-controls="offcanvasTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list" viewBox="0 0 16 16" stroke="white" stroke-width="0.5">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                </button>
-                <h5 id="name" class="m-0">HUARANGA RUIZ, JUNIOR EDUARDO</h5>
             </nav>
-            <main class="content px-3 py-2" >
-                <div class="container-fluid">
-                    <div class="mb-3">
-                        <h3>* PAGINA PRINCIPAL  / LOBBY /*</h3>
-                    </div>
-                </div>
-            </main>
-        </div>
+        </aside>
 
-  </div> 
+        <!-- Contenido -->
+        <main class="bd-main order-1" style="background-color: #ffc107; padding: 15px; border: 1px solid #fd7e14;">
+            <div class="bd-intro ps-lg-4">
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+                <h1>Contenido principal aquí.</h1>
+            </div>
+        </main>
+    </div>
+    
 </body>
 <!-- BODY -->
 
- <!-- JavaScript -->
- <script src="Global/Global.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>
-
