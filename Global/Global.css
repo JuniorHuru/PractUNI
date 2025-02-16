@@ -71,7 +71,7 @@ small {
 }
 
 /* Responsive */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .bd-links {
         position: sticky;
         top: 5rem;
@@ -163,3 +163,15 @@ small {
         padding-bottom: 30px;
     }
 }
+
+@media (max-width: 900px) {
+    .custom-toggle-btn {
+      display: inline-block !important; /* Asegura que se muestre en este tamaño */
+    }
+  }
+
+@media (min-width: 901px) {
+    .custom-toggle-btn {
+      display: none !important; /* Oculta el botón en tamaños mayores a 900px */
+    }
+  }

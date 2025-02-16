@@ -35,7 +35,7 @@
         <div class="B-SuBlanca container-fluid d-flex align-items-md-center">
 
             <!-- Botón para móviles -->
-            <button class="btn d-md-none py-0" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="btn custom-toggle-btn py-0" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
@@ -277,7 +277,7 @@
                     <main class="content px-2 py-2">
                         <div class="container-fluid">
                             <div class="d-flex position-relative"> 
-                                <img src="../img/foto.jpg" class="flex-shrink-0 me-3" style="width: 150px; height: 150px;">
+                                <img src="../img/foto.jpg" class="flex-shrink-0 me-3 rounded float-start" style="width: 150px; height: 150px;">
                                 <div>
                                   <h5 class="mt-0" style="margin-bottom: 0px;">HUARANGA RUIZ, JUNIOR EDUARDO</h5>
                                   <h6>1515424</h6>
@@ -312,12 +312,14 @@
                                 <button class="nav-link" id="cuarta-tab" data-bs-toggle="tab" data-bs-target="#cuarta-tab-pane" type="button" role="tab" aria-controls="cuarta-tab-pane" aria-selected="false">4to</button>
                                 </li>
                             </ul>
+
                             <div class="tab-content" id="myTabContent">
+
                                 <div class="tab-pane fade show active" id="primera-tab-pane" role="tabpanel" aria-labelledby="primera-tab" tabindex="0">
                                     <div class="contenedor-sombrado p-3" style="background-color: #f5f5f5;">
                                         <div class="container">
-                                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                                <h1 class="testeo mb-0">1.- Datos Personales</h1>
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <h1 class="testeo mb-0">Datos Personales</h1>
                                                 <div class="botones-primero"> <!-- Clase específica -->
                                                     <!-- Botón 1 -->
                                                     <button type="button" class="btn">
@@ -405,6 +407,10 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    
+                                                    <h1 class="testeo mb-0 mt-3">Domicilio</h1>
+                                                    <button type="button" class="btn btn-primary mt-2">Añadir Registro</button>
+
                                                 </div>
                                 
                                                 <!-- Columna derecha -->
@@ -440,22 +446,106 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                     <h1 class="testeo mb-0 mt-3">Lugar de Nacimiento</h1>
+
+                                                    <div class="row g-2 mb-3 mt-2">
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                                  <option selected>Perú</option>
+                                                                  <option value="1">Perú</option>
+                                                                </select>
+                                                                <label for="floatingSelect">País</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                                  <option selected>Lima</option>
+                                                                  <option value="1">Lima</option>
+                                                                </select>
+                                                                <label for="floatingSelect">Departamento</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row g-2 mb-3">
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                                  <option selected>Lima</option>
+                                                                  <option value="1">Lima</option>
+                                                                </select>
+                                                                <label for="floatingSelect">Provincia</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md">
+                                                            <div class="form-floating">
+                                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                                  <option selected>San Martin de Porres</option>
+                                                                  <option value="1">San Martin de Porres</option>
+                                                                </select>
+                                                                <label for="floatingSelect">Distrito</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
+                                            
+                                            <div class="table-responsive-xxl">
+                                                <table class="table">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">#</th>
+                                                      <th scope="col">País</th>
+                                                      <th scope="col">Dirección Extranjera</th>
+                                                      <th scope="col">Departamento</th>
+                                                      <th scope="col">Provincia</th>
+                                                      <th scope="col">Distrito</th>
+                                                      <th scope="col">Tipo de Vía</th>
+                                                      <th scope="col">Nombre de la Vía</th>
+                                                      <th scope="col">Tipo</th>
+                                                      <th scope="col">Número de Inmueble</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      <th scope="row">1</th>
+                                                      <td>Perú</td>
+                                                      <td>Av. Principal</td>
+                                                      <td>Lima</td>
+                                                      <td>San Isidro</td>
+                                                      <td>San Isidro</td>
+                                                      <td>Avenida</td>
+                                                      <td>Ejemplo</td>
+                                                      <td>Calle</td>
+                                                      <td>123</td>
+                                                    </tr>
+                                                    <!-- Más filas de ejemplo -->
+                                                  </tbody>
+                                                </table>
+                                            </div>
+                                              
+                                              
+                                            
                                         </div>
+                                        Test
                                     </div>
                                 </div>
                                 
                                 <div class="tab-pane fade" id="segunda-tab-pane" role="tabpanel" aria-labelledby="segunda-tab" tabindex="0">
                                     Pagina 2
                                 </div>
+
                                 <div class="tab-pane fade" id="tercera-tab-pane" role="tabpanel" aria-labelledby="tercera-tab" tabindex="0">
                                     Pagina 3
                                 </div>
+
                                 <div class="tab-pane fade" id="cuarta-tab-pane" role="tabpanel" aria-labelledby="cuarto-tab" tabindex="0">
                                     Pagina 4
                                 </div>
+
                             </div>
                             <!-- Contenido / Docente -->
                         </div>
