@@ -328,34 +328,36 @@
                                                         </svg>
                                                     </button>
                                                     <!-- Botón 2 -->
-                                                    <button type="button" class="btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                    <button type="button" class="btn" id="editButton">
+                                                        <svg id="iconEye" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
                                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
                                                         </svg>
                                                     </button>
                                                     <!-- Botón 3 -->
-                                                    <button type="button" class="btn">
+                                                    <button type="button" class="btn" id="deleteButton">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
                                                             <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
                                                         </svg>
                                                     </button>
+                                                    
                                                 </div>
                                             </div>
                                             <div class="row">
+                                                
                                                 <!-- Columna izquierda -->
                                                 <div class="col-md-6">
                                                     <!-- Fila 1: DNI y Fecha de nacimiento -->
                                                     <div class="row g-2 mb-3">
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <input type="number" class="form-control" id="floatingDNI" placeholder="Ingresa un número" required>
+                                                                <input type="number" class="form-control" id="floatingDNI" placeholder="Ingresa un número" required disabled>
                                                                 <label for="floatingDNI">DNI</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <input type="date" class="form-control" id="floatingDate" placeholder="Selecciona una fecha" required>
+                                                                <input type="date" class="form-control" id="floatingDate" placeholder="Selecciona una fecha" required disabled>
                                                                 <label for="floatingDate">Fecha de nacimiento</label>
                                                             </div>
                                                         </div>
@@ -365,13 +367,13 @@
                                                     <div class="row g-2 mb-3">
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <input type="number" class="form-control" id="floatingCelular" placeholder="Ingresa un número" required>
+                                                                <input type="number" class="form-control" id="floatingCelular" placeholder="Ingresa un número" required disabled>
                                                                 <label for="floatingCelular">Celular</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <input type="number" class="form-control" id="floatingTelefono" placeholder="Ingresa un número" required>
+                                                                <input type="number" class="form-control" id="floatingTelefono" placeholder="Ingresa un número" required disabled>
                                                                 <label for="floatingTelefono">Teléfono Fijo</label>
                                                             </div>
                                                         </div>
@@ -381,7 +383,7 @@
                                                     <div class="row g-2 mb-3">
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <select class="form-select" id="floatingSelectGender" aria-label="Seleccionar género" required>
+                                                                <select class="form-select" id="floatingSelectGender" aria-label="Seleccionar género" required disabled>
                                                                     <option selected hidden>Elegir</option>
                                                                     <option value="1">Masculino</option>
                                                                     <option value="2">Femenino</option>
@@ -392,7 +394,7 @@
                                                         </div>
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <select class="form-select" id="floatingSelectBlood" aria-label="Seleccionar grupo sanguíneo" required>
+                                                                <select class="form-select" id="floatingSelectBlood" aria-label="Seleccionar grupo sanguíneo" required disabled>
                                                                     <option selected hidden>Elegir</option>
                                                                     <option value="1">AB+</option>
                                                                     <option value="2">A+</option>
@@ -407,10 +409,84 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
-                                                    <h1 class="testeo mb-0 mt-3">Domicilio</h1>
-                                                    <button type="button" class="btn btn-primary mt-2">Añadir Registro</button>
-
+                                                
+                                                        <div class="modal fade" id="modalDomicilio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalDomicilioLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modalDomicilioLabel">Añadir Domicilio</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="row g-2 mb-3 mt-2">
+                                                                            <div class="col-md">
+                                                                                <div class="form-floating">
+                                                                                    <select class="form-select" id="selectPais">
+                                                                                        <option selected>Perú</option>
+                                                                                        <option value="Otros">Otros</option>
+                                                                                    </select>
+                                                                                    <label for="selectPais">País</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md">
+                                                                                <div class="form-floating">
+                                                                                    <select class="form-select" id="selectDepartamento">
+                                                                                        <option selected>Lima</option>
+                                                                                        <option value="Otros">Otros</option>
+                                                                                    </select>
+                                                                                    <label for="selectDepartamento">Departamento</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row g-2 mb-3">
+                                                                            <div class="col-md">
+                                                                                <div class="form-floating">
+                                                                                    <select class="form-select" id="selectProvincia">
+                                                                                        <option selected>Lima</option>
+                                                                                        <option value="Otros">Otros</option>
+                                                                                    </select>
+                                                                                    <label for="selectProvincia">Provincia</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md">
+                                                                                <div class="form-floating">
+                                                                                    <select class="form-select" id="selectDistrito">
+                                                                                        <option selected>Ate</option>
+                                                                                        <option value="Otros">Otros</option>
+                                                                                    </select>
+                                                                                    <label for="selectDistrito">Distrito</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row g-2 mb-3">
+                                                                            <div class="col-md">
+                                                                                <div class="form-floating">
+                                                                                    <input type="text" class="form-control" id="inputNombreZona" placeholder="Ingresa nombre de la zona" required>
+                                                                                    <label for="inputNombreZona">Nombre de Zona</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md">
+                                                                                <div class="form-floating">
+                                                                                    <input type="text" class="form-control" id="inputTipoVia" placeholder="Ingresa un tipo de vía" required>
+                                                                                    <label for="inputTipoVia">Tipo de Vía</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md">
+                                                                                <div class="form-floating">
+                                                                                    <input type="text" class="form-control" id="inputInmueble" placeholder="Ingresa un inmueble" required>
+                                                                                    <label for="inputInmueble">Inmueble</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                                        <button type="button" class="btn btn-primary" id="guardarDomicilio2">Domicilio 2</button>
+                                                                        <button type="button" class="btn btn-success" id="guardarDomicilio1">Guardar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                 </div>
                                 
                                                 <!-- Columna derecha -->
@@ -441,8 +517,8 @@
                                                         <div class="col-md">
                                                             <div class="input-group">
                                                                 <span class="input-group-text">Email(s)</span>
-                                                                <input type="text" aria-label="Primer email" class="form-control" placeholder="Email principal">
-                                                                <input type="text" aria-label="Segundo email" class="form-control" placeholder="Email secundario">
+                                                                <input type="text" class="form-control" id="floatingEmail1" placeholder="Email principal" disabled>
+                                                                <input type="text" class="form-control" id="floatingEmail2" placeholder="Email secundario" disabled>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -452,40 +528,40 @@
                                                     <div class="row g-2 mb-3 mt-2">
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                                                  <option selected>Perú</option>
-                                                                  <option value="1">Perú</option>
+                                                                <select class="form-select" id="floatingSelectCountry" disabled>
+                                                                    <option selected>Perú</option>
+                                                                    <option value="1">Extranjero</option>
                                                                 </select>
-                                                                <label for="floatingSelect">País</label>
+                                                                <label for="floatingSelectCountry">País</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                                                  <option selected>Lima</option>
-                                                                  <option value="1">Lima</option>
+                                                                <select class="form-select" id="floatingSelectDepartment" disabled>
+                                                                    <option selected>Lima</option>
+                                                                    <option value="1">Otros</option>
                                                                 </select>
-                                                                <label for="floatingSelect">Departamento</label>
+                                                                <label for="floatingSelectDepartment">Departamento</label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row g-2 mb-3">
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                                                  <option selected>Lima</option>
-                                                                  <option value="1">Lima</option>
+                                                                <select class="form-select" id="floatingProvincia" disabled>
+                                                                    <option selected>Lima</option>
+                                                                    <option value="1">Otros</option>
                                                                 </select>
-                                                                <label for="floatingSelect">Provincia</label>
+                                                                <label for="floatingProvincia">Provincia</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md">
                                                             <div class="form-floating">
-                                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                                                  <option selected>San Martin de Porres</option>
-                                                                  <option value="1">San Martin de Porres</option>
+                                                                <select class="form-select" id="floatingDistrito" disabled>
+                                                                    <option selected>Ate</option>
+                                                                    <option value="1">Otros</option>
                                                                 </select>
-                                                                <label for="floatingSelect">Distrito</label>
+                                                                <label for="floatingDistrito">Distrito</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -493,42 +569,135 @@
                                                 </div>
                                             </div>
                                             
+                                            <div class="row g-2 mb-3">
+                                                <div class="col-md">
+                                                    <h1 class="testeo mb-0 mt-3">Domicilio</h1>
+                                                    <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalDomicilio">
+                                                        Añadir Registro
+                                                    </button>
+                                                </div>
+                                            </div>
+
                                             <div class="table-responsive-xxl">
-                                                <table class="table">
-                                                  <thead>
-                                                    <tr>
-                                                      <th scope="col">#</th>
-                                                      <th scope="col">País</th>
-                                                      <th scope="col">Dirección Extranjera</th>
-                                                      <th scope="col">Departamento</th>
-                                                      <th scope="col">Provincia</th>
-                                                      <th scope="col">Distrito</th>
-                                                      <th scope="col">Tipo de Vía</th>
-                                                      <th scope="col">Nombre de la Vía</th>
-                                                      <th scope="col">Tipo</th>
-                                                      <th scope="col">Número de Inmueble</th>
-                                                    </tr>
-                                                  </thead>
-                                                  <tbody>
-                                                    <tr>
-                                                      <th scope="row">1</th>
-                                                      <td>Perú</td>
-                                                      <td>Av. Principal</td>
-                                                      <td>Lima</td>
-                                                      <td>San Isidro</td>
-                                                      <td>San Isidro</td>
-                                                      <td>Avenida</td>
-                                                      <td>Ejemplo</td>
-                                                      <td>Calle</td>
-                                                      <td>123</td>
-                                                    </tr>
-                                                    <!-- Más filas de ejemplo -->
-                                                  </tbody>
+                                                <table class="table" id="tablaDomicilio">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>País</th>
+                                                            <th>Departamento</th>
+                                                            <th>Provincia</th>
+                                                            <th>Distrito</th>
+                                                            <th>Nombre de Zona</th>
+                                                            <th>Tipo de Vía</th>
+                                                            <th>Inmueble</th>
+                                                        </tr>
+                                                        <tbody></tbody>
+                                                    </thead>
                                                 </table>
                                             </div>
                                               
-                                              
+                                            <h1 class="testeo mb-0 mt-3">Familiares</h1>
+                                            <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalFamiliar">
+                                                Añadir Familiar
+                                            </button>
                                             
+                                            <table class="table mt-3" id="tablaFamiliares">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Apellidos</th>
+                                                        <th>Fecha Nac.</th>
+                                                        <th>Parentesco</th>
+                                                        <th>Nivel Est.</th>
+                                                        <th>Estado Civ.</th>
+                                                        <th>Dep. Econ.</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+
+                                            <div class="modal fade" id="modalFamiliar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalFamiliarLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="modalFamiliarLabel">Añadir Familiar</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row g-2 mb-3 mt-2">
+                                                                <div class="col-md">
+                                                                    <div class="form-floating">
+                                                                        <input type="text" class="form-control" id="inputApellidosNombres" placeholder="Ingresa los apellidos y nombres" required>
+                                                                        <label for="inputApellidosNombres">Apellidos y Nombres</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row g-2 mb-3">
+                                                                <div class="col-md">
+                                                                    <div class="form-floating">
+                                                                        <input type="date" class="form-control" id="inputFechaNacimiento" required>
+                                                                        <label for="inputFechaNacimiento">Fecha de Nacimiento</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md">
+                                                                    <div class="form-floating">
+                                                                        <select class="form-select" id="selectParentesco">
+                                                                            <option selected>Seleccionar</option>
+                                                                            <option value="Padre">Padre</option>
+                                                                            <option value="Madre">Madre</option>
+                                                                            <option value="Hermano/a">Hermano/a</option>
+                                                                            <option value="Otro">Otro</option>
+                                                                        </select>
+                                                                        <label for="selectParentesco">Parentesco</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row g-2 mb-3">
+                                                                <div class="col-md">
+                                                                    <div class="form-floating">
+                                                                        <select class="form-select" id="selectNivelEstudios">
+                                                                            <option selected>Seleccionar</option>
+                                                                            <option value="Primaria">Primaria</option>
+                                                                            <option value="Secundaria">Secundaria</option>
+                                                                            <option value="Superior">Superior</option>
+                                                                            <option value="Universitario">Universitario</option>
+                                                                        </select>
+                                                                        <label for="selectNivelEstudios">Nivel de Estudios</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md">
+                                                                    <div class="form-floating">
+                                                                        <select class="form-select" id="selectEstadoCivil">
+                                                                            <option selected>Seleccionar</option>
+                                                                            <option value="Soltero">Soltero</option>
+                                                                            <option value="Casado">Casado</option>
+                                                                            <option value="Divorciado">Divorciado</option>
+                                                                            <option value="Viudo">Viudo</option>
+                                                                        </select>
+                                                                        <label for="selectEstadoCivil">Estado Civil</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row g-2 mb-3">
+                                                                <div class="col-md">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" id="checkboxDependeEconomicamente">
+                                                                        <label class="form-check-label" for="checkboxDependeEconomicamente">
+                                                                            Depende Económicamente de Ud.
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-primary" id="guardarFamiliar2">Familiar 2</button>
+                                                            <button type="button" class="btn btn-success" id="guardarFamiliar">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                         Test
                                     </div>
